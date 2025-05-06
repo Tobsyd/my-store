@@ -59,6 +59,10 @@ body{
     border-radius: 4px;
 }
 
+.card p, h{
+    max-width: fit-content;
+}
+
   footer {
     background: #222;
     color: white;
@@ -67,7 +71,11 @@ body{
   }
 
   @media (max-width: 600px) {
-    .nav {
+    nav {
       flex-direction: column;
+    }
+    .nav a{
+        display: flex;
+        margin: 5px;
     }
   }
